@@ -22,7 +22,7 @@ class UsersTableSeeder extends Seeder
                     'is_admin' => 1
                 ),
                 array(
-                    'id' => 1,
+                    'id' => 2,
                     'name' => 'John',
                     'email' => 'johnDoe@gmail.com',
                     'password' => Hash::make('123456'),
