@@ -6,7 +6,6 @@ use App\User;
 use App\Ticket;
 use App\Category;
 use App\Http\Requests;
-use App\Mailers\AppMailer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -110,7 +109,7 @@ class TicketsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function close($ticket_id, AppMailer $mailer)
+    public function close($ticket_id)
     {
         $ticket = Ticket::where('ticket_id', $ticket_id)->firstOrFail();
 
@@ -120,7 +119,7 @@ class TicketsController extends Controller
 
         $ticketOwner = $ticket->user;
 
-        $mailer->sendTicketStatusNotification($ticketOwner, $ticket);
+       /* $mailer->sendTicketStatusNotification($ticketOwner, $ticket);*/
 
         return redirect()->back()->with("status", "The ticket has been closed.");
     }
