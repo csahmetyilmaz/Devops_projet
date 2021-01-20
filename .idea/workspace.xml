@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e696f35-74d7-4d85-8080-29bdaef794aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/projectticket.sql" afterDir="false" />
-    </list>
+    <list default="true" id="4e696f35-74d7-4d85-8080-29bdaef794aa" name="Default Changelist" comment="commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,8 +116,16 @@
       <workItem from="1611130664345" duration="2286000" />
       <workItem from="1611134449807" duration="601000" />
       <workItem from="1611136167945" duration="621000" />
-      <workItem from="1611145384627" duration="383000" />
+      <workItem from="1611145384627" duration="696000" />
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1611145872643</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611145872643</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,5 +145,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
 </project>
