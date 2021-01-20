@@ -60,7 +60,7 @@ class TicketsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, AppMailer $mailer)
+    public function store(Request $request/*, AppMailer $mailer*/)
     {
         $this->validate($request, [
             'title'     => 'required',
@@ -81,7 +81,7 @@ class TicketsController extends Controller
 
         $ticket->save();
 
-        $mailer->sendTicketInformation(Auth::user(), $ticket);
+        //$mailer->sendTicketInformation(Auth::user(), $ticket);
 
         return redirect()->back()->with("status", "A ticket with ID: #$ticket->ticket_id has been opened.");
     }

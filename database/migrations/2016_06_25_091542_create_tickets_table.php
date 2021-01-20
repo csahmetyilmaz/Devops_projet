@@ -21,7 +21,7 @@ class CreateTicketsTable extends Migration
             $table->string('priority');
             $table->text('message');
             $table->string('status');
-            //$table->timestamps();
+            $table->timestamps();
         });
     }
 

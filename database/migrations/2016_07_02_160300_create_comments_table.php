@@ -17,7 +17,7 @@ class CreateCommentsTable extends Migration
             $table->integer('ticket_id')->unsigned();
             $table->integer('user_id')->unsigned();
             $table->text('comment');
-            //$table->timestamps();
+            $table->timestamps();
         });
     }
 

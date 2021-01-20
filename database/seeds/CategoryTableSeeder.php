@@ -16,7 +16,7 @@ class CategoryTableSeeder extends Seeder
             array(
                 array(
                     'id' => 1,
-                    'name' => 'Hardware'
+                    'name' => 'Hardware',
                 ),
 
                 array(
