@@ -27,7 +27,7 @@ cd Devops_projet/
 Installation de composer dans l'app du projet : 
 
 ```bash
-docker run -v $(pwd):/app composer install : run composer 
+docker run -v $(pwd):/app composer install
 ```
 
 Build le Dockerlfile (sudo si besoin) :
