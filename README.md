@@ -85,4 +85,6 @@ Accéder à votre application depuis un navigateur :
 ```bash
 http://votre_ip:8000 (exemple : http://192.168.1.111:8000)
 ```
+Résultat :
+![alt text](https://github.com/johanHamidi/Devops_projet/edit/master/appLaravel.png?raw=true)
 
