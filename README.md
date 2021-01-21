@@ -84,7 +84,7 @@ Accéder à votre application depuis un navigateur :
 http://votre_ip:8000 (exemple : http://192.168.1.111:8000)
 ```
 Résultat :
-![alt text](https://github.com/johanHamidi/Devops_projet/edit/master/appLaravel.png)
+
 ![alt text](https://github.com/johanHamidi/Devops_projet/blob/master/appLaravel.png?raw=true)
 
 Utilisateur déjà présent pour tester l'application : 
