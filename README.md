@@ -2,8 +2,7 @@
 
 Ce container Docker contient tout ce qui est nécessaire afin d'utiliser la solution.
 
-Composer 1.10 
-
+ - Composer 1.10 
  - Php 7.4 
  - Node 12 
  - MySQL:5.7 
@@ -11,8 +10,7 @@ Composer 1.10
 
 ## Installation
 
-Pour installer la solution les commandes à exécuter sont les suivantes (dans l'ordre indiqué)
- [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Pour installer la solution les commandes à exécuter sont les suivantes (dans l'ordre indiqué).
 
 Cloner le projet :
 
