@@ -47,33 +47,33 @@ docker-compose up -d
    docker-compose up
    ```
 
-Vérifier si les conteneurs sont démarrer :
+Vérifier si les conteneurs sont démarrés :
    ```bash
    docker-compose ps -a
    ```
 
-Une fois les conteneurs démarrer, générer la clé SSH du projet pour le conteneur laravel-app :
+Une fois les conteneurs démarrés, générer la clé SSH du projet pour le conteneur laravel-app :
 
 ```bash
- docker-compose exec laravel-app php artisan key:generate
- ```
+docker-compose exec laravel-app php artisan key:generate
+```
 
 Executer la commande pour migrer la structure de la database dans mySQL : 
 
 ```bash
-  docker-compose exec laravel-app php artisan migrate
-  ```
+docker-compose exec laravel-app php artisan migrate
+```
 
 Puis executer la commande suivante afin importer les données dans les tables :
 
 ```bash
-  docker-compose exec laravel-app php artisan db:seed
-  ```
+docker-compose exec laravel-app php artisan db:seed
+```
   
 ## Usage
 
 Pour pouvoir lancer l'application, exécuter la commande suivante
 
 ```bash
-  docker-compose exec laravel-app php artisan serve
-  ```
+docker-compose exec laravel-app php artisan serve
+```
