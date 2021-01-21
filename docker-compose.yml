@@ -1,0 +1,53 @@
+version: '3.1'
+services:
+
+  laravel-app:
+    build:
+      context: './'
+      args:
+        uid: ${UID}
+    container_name: laravel-app
+    environment:
+      - APACHE_RUN_USER=#${UID}
+      - APACHE_RUN_GROUP=#${UID}
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 8080:8080
+    networks:
+      backend:
+        aliases:
+          - laravel-app
+  php:
+    build:
+      context: ./
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    ports:
+      - 8000:8000
+
+  mysql-db:
+    image: mysql:5.7
+    container_name: mysqlDB
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./run/var:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_HOST: ${DB_HOST}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_USER: ${DB_USERNAME}
+    networks:
+      backend:
+        aliases:
+          - db
+
+networks:
+  backend:
+    name: backend-network
+
+
+
