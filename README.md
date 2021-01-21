@@ -77,3 +77,10 @@ Pour pouvoir lancer l'application, exécuter la commande suivante
 ```bash
 docker-compose exec laravel-app php artisan serve
 ```
+
+Acceder a votre application depuis un navigateur :
+
+```bash
+hhtp://votre_ip:8000 (exemple : http://192.168.1.111:8000)
+```
+
