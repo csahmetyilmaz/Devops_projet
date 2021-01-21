@@ -64,7 +64,7 @@ Executer la commande pour migrer la structure de la database dans mySQL :
 docker-compose exec laravel-app php artisan migrate
 ```
 
-Puis executer la commande suivante afin importer les données dans les tables :
+Puis éxecuter la commande suivante afin importer les données dans les tables :
 
 ```bash
 docker-compose exec laravel-app php artisan db:seed
@@ -72,13 +72,15 @@ docker-compose exec laravel-app php artisan db:seed
   
 ## Usage
 
-Pour pouvoir lancer l'application, exécuter la commande suivante
+Pour pouvoir lancer l'application, éxecuter la commande suivante :
 
 ```bash
-docker-compose exec laravel-app php artisan serve
+docker-compose exec laravel-app php artisan serve --host='laravel-app'
 ```
-
-Acceder a votre application depuis un navigateur :
+  Cette commande vous permet de ne pas avoir à modifier la configuration host par défaut de laravel qui se situe dans la fichier suivant à la fin :
+   - sudo vi vendor/laravel/framework/src/Illuminate/Foundation/Console/ServeCommand.php
+   
+Accéder à votre application depuis un navigateur :
 
 ```bash
 http://votre_ip:8000 (exemple : http://192.168.1.111:8000)
