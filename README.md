@@ -41,7 +41,7 @@ Lancement de la configuration docker-compose.yml :
 ```bash
 docker-compose up -d
 ```
- - Si besoin 
+ - Si besoin de vérifier le détail des lancement des conteneurs, éxecuter la commande suivante puis "Ctrl +C" et relancer la commande ci-dessus :
  
    ```bash
    docker-compose up
