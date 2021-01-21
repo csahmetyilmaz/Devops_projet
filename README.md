@@ -24,7 +24,7 @@ Acceder au projet :
 ```bash
 cd Devops_projet/
 ```
-Installation de composer sur docker (si besoin) : 
+Installation de composer dans l'app du projet : 
 
 ```bash
 docker run -v $(pwd):/app composer install : run composer 
