@@ -88,3 +88,11 @@ http://votre_ip:8000 (exemple : http://192.168.1.111:8000)
 Résultat :
 ![alt text](https://github.com/johanHamidi/Devops_projet/edit/master/appLaravel.png)
 
+Utilisateur déjà présent pour tester l'application : 
+- Admin : 
+    - User : admin@support.com
+    - Password : root1234
+- Utilisateur :
+    - User : johnDoe@gmail.com
+    - Password : 123456
+
